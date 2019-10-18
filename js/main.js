@@ -15,7 +15,7 @@ const populate = function(inputElement, targetElement) {
 		alert('error: invalid character');
 	};
 
-	let tableWidth = document.getElementById("signature").clientWidth;
+	let tableWidth = document.getElementById("signature").clientWidth + 20;
 	document.getElementById("signature").setAttribute('width', tableWidth);
 	console.log(tableWidth);
 }
