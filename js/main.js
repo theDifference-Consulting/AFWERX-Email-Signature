@@ -16,8 +16,8 @@ const populate = function(inputElement, targetElement) {
 	};
 
 	let tableWidth = document.getElementById("signature").clientWidth;
-	document.getElementById("signature").setAttribute('style', 'font-family:Roboto, Arial, san-serif; width:'+ tableWidth + ';');
-	console.log(sigWidth);
+	document.getElementById("signature").setAttribute('width', tableWidth);
+	console.log(tableWidth);
 }
 
 const copy = function() {
