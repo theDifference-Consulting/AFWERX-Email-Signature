@@ -1,0 +1,71 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <section class="input-form">
+        	<form>
+        		<label for="name">Name:</label> 
+        		<input name="name" type="text" placeholder="Jane Doe, PhD" id="name-input" onInput="populate(this.id, 'name');"><br>
+        		<label for="title">Title:</label>
+        		<input name="title" type="text" placeholder="Strategic Engagement Officer" id="title-input" onInput="populate(this.id, 'title');"><br>
+        		<label for="email">Email:</label>
+				<input name="email" type="text" placeholder="jane.doe@afwerx.af.mil" id="email-input" onInput="populate(this.id, 'email');"><br>
+				<label for="phone">Phone:</label>
+        		<input name="phone" type="text" placeholder="(000) 000-0000" id="phone-input" onInput="populate(this.id, 'phone');"><br>
+        		<button type="button" onclick="copy()">Copy to clipboard</button>
+        	</form>
+        	<div class="clearfix"></div>
+        </section>
+        
+        <section class="preview">
+        	<!-- begin signature -->
+        	<table style="font-family:Roboto, Arial, san-serif;" id="signature" cellspacing="12">
+				<tbody>
+					<tr>
+						<td align="left" style=" border-right:1px solid rgb(205,208,212)" >
+							<a href="">
+								<img src="img/AFWERX-alpha.png" width="160" style="padding-right:12px;">
+								<br>
+							</a>
+						</td>
+						<td align="left" valign="top">
+							<span style="font-size:13px;font-weight:bold;line-height:14px" id="name">Jane Doe, PhD</span><br/>
+							<span style="font-size:11px;line-height:14px">
+								<span id="title"><i>Strategic Engagement Officer</i></span><br/>
+								<a href="tel:(000) 000-0000" id="phone" style="text-decoration-line:none;color:rgb(35,31,32)">(000) 000-0000</a>
+							</span>
+						</td>
+					</tr>
+
+					<tr> 
+						<td colspan="2" style="border-top:1px solid rgb(205,208,212);">
+							<span>
+								<a href="">
+								<img src="img/AFWERX-join.png" width="160" style="padding-top: 8px;"/>
+								</a>
+							</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- end signature -->
+        </section>
+        <script src="js/main.js"></script>
+    </body>
+</html>
