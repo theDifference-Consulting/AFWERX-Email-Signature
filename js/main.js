@@ -12,7 +12,7 @@ const populate = function(inputElement, targetElement) {
 		};
 	} else {
 		document.getElementById(inputElement).value = input.substring(0, input.length - 1);
-		alert('error: invalid character');
+		alert('Error: invalid character. \nPlease only use A-Z, 0-9, @, or basic punctuation.');
 	};
 
 	let tableWidth = document.getElementById("signature").clientWidth + 20;
