@@ -1,4 +1,4 @@
-let extra = 20;
+//copy of the main.js file but without the fixed witdh
 const populate = function(inputElement, targetElement) {
 	//get text from current field
 	let input = document.getElementById(inputElement).value;
@@ -15,10 +15,6 @@ const populate = function(inputElement, targetElement) {
 		document.getElementById(inputElement).value = input.substring(0, input.length - 1);
 		alert('Error: invalid character. \nPlease only use A-Z, 0-9, @, or basic punctuation.');
 	};
-	let tableWidth = document.getElementById("signature").clientWidth;
-	document.getElementById("signature").setAttribute('width', tableWidth + extra);
-	extra = 0;
-	console.log(tableWidth);
 }
 
 const copy = function() {

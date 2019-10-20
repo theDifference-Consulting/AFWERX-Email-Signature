@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Signature Delta</title>
+        <title>Signature Echo</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/style.css">
@@ -22,8 +22,10 @@
         		<input name="title" type="text" placeholder="Strategic Engagement Officer" id="title-input" onInput="populate(this.id, 'title');"><br>
         		<!-- <label for="email">Email:</label>
 				<input name="email" type="text" placeholder="jane.doe@afwerx.af.mil" id="email-input" onInput="populate(this.id, 'email');"><br> -->
-				<label for="phone">Phone:</label>
+				<label for="phone">Mobile:</label>
         		<input name="phone" type="text" placeholder="(000) 000-0000" id="phone-input" onInput="populate(this.id, 'phone');"><br>
+                <label for="office">Office:</label>
+                <input name="office" type="text" placeholder="(000) 000-0000" id="office-input" onInput="populate(this.id, 'office');"><br>
         		<button type="button" onclick="copy()">Copy to clipboard</button>
         	</form>
         	<div class="clearfix"></div>
@@ -34,32 +36,38 @@
         	<table style="font-family:Roboto, Arial, san-serif;" id="signature" cellspacing="12" >
 				<tbody>
 					<tr>
-						<td align="left" style=" border-right:1px solid rgb(205,208,212)" >
-								<img src="../img/Difference-Delta.png" width="160" style="padding-right:12px;">
-							</a>
-						</td>
-						<td align="left" valign="top">
-							<span style="font-size:13px;font-weight:bold;line-height:14px" id="name">Jane Doe, PhD</span><br/>
-							<span style="font-size:11px;line-height:14px">
-								<span id="title"><i>Strategic Engagement Officer</i></span><br/>
-								<a href="tel:(000) 000-0000" id="phone" style="text-decoration-line:none;color:rgb(35,31,32)">(000) 000-0000</a>
+						<td align="left" valign="top" style="border-left:1px solid rgb(205,208,212); padding-left: 12px;">
+                            <p style="margin-top:11px; line-height:14px;"> 
+    							<span style="font-size:13px;font-weight:bold;line-height:14px" id="name">Jane Doe, PhD</span><br/>
+    							<span style="font-size:11px;line-height:14px;">
+    								<span id="title"><i>Strategic Engagement Officer</i></span>
+                            </p>
+                            <p style="font-size:11px;line-height:14px;">
+								Mobile: <a href="tel:(000) 000-0000" id="phone" style="text-decoration-line:none;color:rgb(35,31,32)">(000) 000-0000</a><br/>
+                                Office: <a href="tel:(000) 000-0000" id="office" style="text-decoration-line:none;color:rgb(35,31,32)">(000) 000-0000</a>
+                            </p>
+                            <p style="font-size:11px;line-height:14px;">
+                                3773 Howard Hughes Parkway<br>
+                                Las Vegas, NV, 89169
+                            </p>
 							</span>
 						</td>
 					</tr>
 
 					<tr> 
-						<td colspan="2" style="border-top:1px solid rgb(205,208,212);">
-							<span>
-								<a href="https://www.thedifferenceconsulting.com/contact" target="_blank">
-								<img src="../img/AFWERX-connect.png" width="98" style="padding-top: 8px;"/>
-								</a>
-							</span>
+						<td style="background-color:#999999; color:#ffffff; padding:12px; font-size: 11px;line-height:14px;">
+                            <b>About AFWERX:</b><br>
+                            The mission of AFWERX is to serve the needs of the Air Force by addressing tough challenges and provide solutions to the warfighter quickly.  AFWERX is a catalyst for agile Air Force engagement across industry, academia, and non-traditional contributors to create transformative opportunities and innovation.  We accomplish our mission by connecting diverse, innovative members from industry, academia and government to create capabilities and prototype opportunities for the Air Force.
+                            <br><br>
+							<a href="https://www.thedifferenceconsulting.com/contact" style="color:#ffffff;" target="_blank">
+								Join the Ecosystem
+							</a>
 						</td>
 					</tr>
 				</tbody>
 			</table>
 			<!-- end signature -->
         </section>
-        <script src="../js/main.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
