@@ -15,10 +15,9 @@ const populate = function(inputElement, targetElement) {
 		document.getElementById(inputElement).value = input.substring(0, input.length - 1);
 		alert('Error: invalid character. \nPlease only use A-Z, 0-9, @, or basic punctuation.');
 	};
+	document.getElementById("signature").setAttribute('width', " "); // reset width so it can get smaller
 	let tableWidth = document.getElementById("signature").clientWidth;
-	document.getElementById("signature").setAttribute('width', tableWidth + extra);
-	extra = 0;
-	console.log(tableWidth);
+	document.getElementById("signature").setAttribute('width', tableWidth + 20);
 }
 
 const copy = function() {
