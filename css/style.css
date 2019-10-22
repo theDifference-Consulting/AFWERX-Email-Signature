@@ -1,31 +1,67 @@
+html {
+	height:100%;
+}
+
 body {
-	display: flex;
-	flex
+	font-family: 'Oswald', sans-serif;
+	background-color:#7ec142; /* Old browsers */
+	background: -moz-linear-gradient(top, #95d35e 0%, #7ec142 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #95d35e 0%,#7ec142 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #95d35e 0%,#7ec142 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+h1 {
+	font-size: 48px;
+	margin: 0;
+}
+
+.wrapper {
+	margin:0 auto;
+	margin-top: 20px;
+	display:table;
+	position: relative;
+}
+
+.top-text {
+	display:table-caption;
+	color:#ffffff;
+	padding-bottom: 12px;
+}
+
+.white-box {
+	background-color: #f9f9f9;
+	padding:40px;
+	border-radius: 3px;
+	box-shadow: 0 0 3px rgba(0,0,0,.3);
+	display:table-cell;
 }
 
 .input-form {
-	margin:40px 15px 0 15px;
+	margin:0px 15px 0 15px;
 	font-family: sans-serif;
 	min-width: 336px;
+	font-family: 'Oswald', sans-serif;
 }
 
 .preview {
+	background-color: #ffffff;
 	padding:20px;
-	margin-top: 40px;
-	margin-right: 15px;
-	border: 1px solid #333;
+	margin:15px;
+	border: 1px solid #bfc0be;
 	display: inline-block;
+	border-radius: 2px;
 }
 
 form input {
 	margin-bottom: 12px;
 	padding:8px 12px;
 	float: left;
-	width: 250px;
-	border: 1px solid #333;
+	width: calc(100% - 77px);
+	border: 1px solid #bfc0be;
 	box-shadow: none;
 	transition: box-shadow ease .1s;
 	outline:none;
+	border-radius: 2px;
 }
 
 form input:focus, form input:hover {
@@ -34,9 +70,11 @@ form input:focus, form input:hover {
 }
 
 form label {
+	font-weight: bold;
+	color:#555;
 	float: left;
-	width:60px;
-	padding-top:7px;
+	width:50px;
+	padding-top:5px;
 	font-size: 14px;
 }
 
@@ -47,10 +85,10 @@ form br {
 form button {
 	margin-left: 60px;
 	padding:8px 12px;
-	border-radius: 0;
+	border-radius: 2px;
 	border-image: none;
 	outline:none;
-	border: 1px solid #333;
+	border: 1px solid #bfc0be;
 	box-shadow: none;
 	transition: box-shadow ease .1s;
 	float: right;
@@ -67,14 +105,16 @@ form button:hover {
 	transition: box-shadow ease .1s;
 }
 
-@media (max-width: 777px) {
-	body {
-		display: initial;
-	}
-	form button {
-		float: left;
-	}
-	.preview {
-		margin:40px 15px 15px 15px;
-	}
+.footer-img {
+    position: absolute;
+    bottom: -23px;
+    right: 0;
+    width: 104px;
+    opacity: .7;
+    transition: all ease 1s;
+}
+
+.footer-img:hover {
+	opacity: 1;
+    transition: all ease 1s;
 }

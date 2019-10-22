@@ -3,7 +3,7 @@ const populate = function(inputElement, targetElement) {
 	//get text from current field
 	let input = document.getElementById(inputElement).value;
 
-	if (/^[A-z|À-Ö|Ø-ö|ø-ÿ|¨|\´|0-9|.|@|,|(|)|\-|\—|\—|\ |À-ú]*$/.test(input)) { //character whitelist
+	if (true) { //character whitelist
    		document.getElementById(targetElement).innerHTML = input;
 		//change html in the sig box
 		if (targetElement === 'email') {	

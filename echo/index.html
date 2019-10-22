@@ -3,75 +3,85 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Signature Echo</title>
+        <title>Signature Alpha</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:300,700&display=swap" rel="stylesheet">
     </head>
     <body>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <section class="input-form">
-        	<form>
-        		<label for="name">Name:</label> 
-        		<input name="name" type="text" placeholder="Jane Doe, PhD." id="name-input" onInput="populate(this.id, 'name');"><br>
-        		<label for="title">Title:</label>
-        		<input name="title" type="text" placeholder="Strategic Engagement Officer" id="title-input" onInput="populate(this.id, 'title');"><br>
-        		<!-- <label for="email">Email:</label>
-				<input name="email" type="text" placeholder="jane.doe@afwerx.af.mil" id="email-input" onInput="populate(this.id, 'email');"><br> -->
-				<label for="phone">Mobile:</label>
-        		<input name="phone" type="text" placeholder="(000) 000-0000" id="phone-input" onInput="populate(this.id, 'phone');"><br>
-                <label for="office">Office:</label>
-                <input name="office" type="text" placeholder="(000) 000-0000" id="office-input" onInput="populate(this.id, 'office');"><br>
-        		<button type="button" onclick="copy()">Copy to clipboard</button>
-        	</form>
-        	<div class="clearfix"></div>
-        </section>
-        
-        <section class="preview">
-        	<!-- begin signature -->
-        	<table style="font-family:Roboto, Arial, san-serif;" id="signature" cellspacing="12" >
-				<tbody>
-					<tr>
-						<td align="left" valign="top" style="border-left:1px solid rgb(205,208,212); padding-left: 12px;">
-                            <p style="margin-top:11px; line-height:14px;"> 
-    							<span style="font-size:13px;font-weight:bold;line-height:14px" id="name">Jane Doe, PhD</span><br/>
-    							<span style="font-size:11px;line-height:14px;">
-    								<span id="title"><i>Strategic Engagement Officer</i></span>
-                            </p>
-                            <p style="font-size:11px;line-height:14px;">
-								Mobile: <a href="tel:(000) 000-0000" id="phone" style="text-decoration-line:none;color:rgb(35,31,32)">(000) 000-0000</a><br/>
-                                Office: <a href="tel:(000) 000-0000" id="office" style="text-decoration-line:none;color:rgb(35,31,32)">(000) 000-0000</a>
-                            </p>
-                            <p style="font-size:11px;line-height:14px;">
-                                3773 Howard Hughes Parkway<br>
-                                Las Vegas, NV, 89169
-                            </p>
-							</span>
-						</td>
-					</tr>
-					<tr> 
-						<td style="background-color:#999999; color:#ffffff; padding:12px; font-size: 11px;line-height:14px;">
-                            <b>About AFWERX:</b><br>
-                            The mission of AFWERX is to serve the needs of the Air Force by addressing tough challenges and provide solutions to the warfighter quickly.  AFWERX is a catalyst for agile Air Force engagement across industry, academia, and non-traditional contributors to create transformative opportunities and innovation.  We accomplish our mission by connecting diverse, innovative members from industry, academia and government to create capabilities and prototype opportunities for the Air Force.
-                            <br><br>
-							<a href="https://www.afwerx.af.mil/vegas-hub.html" style="color:#ffffff;" target="_blank">
-								Join the Ecosystem
-							</a>
-						</td>
-					</tr>
-                    <tr>
-                        <td style="font-size: 11px; text-align: right;">
-                            powered by <a href="https://www.thedifferenceconsulting.com" target="_blank" style="text-decoration: none;">theDifference</a>
-                        </td>
-                    </tr>
-				</tbody>
-			</table>
-			<!-- end signature -->
-        </section>
-        <script src="js/main.js"></script>
+        <div class="wrapper">
+            <div class="top-text">
+                <h1>Email Signature Builder</h1>
+                <p>
+                    Just a simple app for creating an email signature, courtesy of the Difference Consulting. Input your information into the appropriate fields and hit the "Copy" button to copy the signature to your keyboard. Then simply paste it into your email signature settings field.
+                </p>
+            </div>
+            <div class="white-box">
+                <section class="input-form">
+                	<form>
+                		<label for="name">Name:</label> 
+                		<input name="name" type="text" placeholder="Jane Doe, PhD." id="name-input" onInput="populate(this.id, 'name');"><br>
+                		<label for="title">Title:</label>
+                		<input name="title" type="text" placeholder="Strategic Engagement Officer" id="title-input" onInput="populate(this.id, 'title');"><br>
+                		<!-- <label for="email">Email:</label>
+        				<input name="email" type="text" placeholder="jane.doe@afwerx.af.mil" id="email-input" onInput="populate(this.id, 'email');"><br> -->
+        				<label for="phone">Mobile:</label>
+                		<input name="phone" type="text" placeholder="(000) 000-0000" id="phone-input" onInput="populate(this.id, 'phone');"><br>
+                        <label for="office">Office:</label>
+                        <input name="office" type="text" placeholder="(000) 000-0000" id="office-input" onInput="populate(this.id, 'office');"><br>
+                		<button type="button" onclick="copy()">Copy to clipboard</button>
+                	</form>
+                	<div class="clearfix"></div>
+                </section>
+                
+                <section class="preview">
+                	<!-- begin signature -->
+                	<table style="font-family:Roboto, Arial, san-serif;" id="signature" cellspacing="12" >
+        				<tbody>
+        					<tr>
+        						<td align="left" valign="top" style="border-left:1px solid rgb(205,208,212); padding-left: 12px;">
+                                    <p style="margin-top:11px; line-height:14px;"> 
+            							<span style="font-size:13px;font-weight:bold;line-height:14px" id="name">Jane Doe, PhD</span><br/>
+            							<span style="font-size:11px;line-height:14px;">
+            								<span id="title"><i>Strategic Engagement Officer</i></span>
+                                    </p>
+                                    <p style="font-size:11px;line-height:14px;">
+        								Mobile: <a href="tel:(000) 000-0000" id="phone" style="text-decoration-line:none;color:rgb(35,31,32)">(000) 000-0000</a><br/>
+                                        Office: <a href="tel:(000) 000-0000" id="office" style="text-decoration-line:none;color:rgb(35,31,32)">(000) 000-0000</a>
+                                    </p>
+                                    <p style="font-size:11px;line-height:14px;">
+                                        3773 Howard Hughes Parkway<br>
+                                        Las Vegas, NV, 89169
+                                    </p>
+        							</span>
+        						</td>
+        					</tr>
+        					<tr> 
+        						<td style="background-color:#999999; color:#ffffff; padding:12px; font-size: 11px;line-height:14px;">
+                                    <b>About AFWERX:</b><br>
+                                    The mission of AFWERX is to serve the needs of the Air Force by addressing tough challenges and provide solutions to the warfighter quickly.  AFWERX is a catalyst for agile Air Force engagement across industry, academia, and non-traditional contributors to create transformative opportunities and innovation.  We accomplish our mission by connecting diverse, innovative members from industry, academia and government to create capabilities and prototype opportunities for the Air Force.
+                                    <br><br>
+        							<a href="https://www.afwerx.af.mil/vegas-hub.html" style="color:#ffffff;" target="_blank">
+        								Join the Ecosystem
+        							</a>
+        						</td>
+        					</tr>
+                            <tr>
+                                <td style="font-size: 11px; text-align: right;">
+                                    powered by <a href="https://www.thedifferenceconsulting.com" target="_blank" style="text-decoration: none;">theDifference</a>
+                                </td>
+                            </tr>
+        				</tbody>
+        			</table>
+        			<!-- end signature -->
+                </section>
+            </div> <!-- end white box -->
+            <img src="../img/theDifference-footer.png" class="footer-img">
+        </div> <!-- end wrapper -->
+        <script src="../js/main.js"></script>
     </body>
 </html>
